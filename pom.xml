@@ -11,6 +11,10 @@
 	<groupId>com.xtuonline</groupId>
 	<artifactId>xtu-backend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<modules>
+		<module>demo</module>
+	</modules>
 	<name>xtu-backend</name>
 	<description>hd</description>
 	<url/>
@@ -63,6 +67,11 @@
 			<artifactId>spring-security-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+        	<groupId>com.h2database</groupId>
+        	<artifactId>h2</artifactId>
+        	<scope>runtime</scope> <!-- 通常只在运行时或测试时需要 -->
+    	</dependency>
 	</dependencies>
 
 	<build>
